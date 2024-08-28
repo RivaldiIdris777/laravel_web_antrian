@@ -30,11 +30,11 @@ Route::middleware('auth')->group(function () {
 
     Route::controller(UserController::class)->group(function() {
         Route::get('/dashboard', 'Dashboard')->name('dashboard');
-        Route::get('/all/users', 'AllUser')->name('all.user');
-        Route::get('/add/user', 'AddUser')->name('add.user');
-        Route::post('/store/user', 'StoreUser')->name('user.store');
-        Route::get('/edit/user/{id}', 'EditUser')->name('edit.user');
-        Route::post('/update/user', 'UpdateUser')->name('user.update');
+        Route::get('/all/users', 'AllUser')->name('all.user')->middleware('permission:user.all');
+        Route::get('/add/user', 'AddUser')->name('add.user')->middleware('permission:user.add');
+        Route::post('/store/user', 'StoreUser')->name('user.store')->middleware('permission:user.store');
+        Route::get('/edit/user/{id}', 'EditUser')->name('edit.user')->middleware('permission:user.edit');
+        Route::post('/update/user', 'UpdateUser')->name('user.update')->middleware('permission:user.update');
         Route::get('/delete/user/{id}', 'DeleteUser')->name('delete.user');
     });
 
