@@ -1,17 +1,16 @@
-![alt text](?raw=true)
 # Laravel Roles and Permission using spatie
 
 Website rule permission menggunakan spatie staterpack
 
 Screenshot app:
 
-https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/login.png
+![alt text](https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/login.png?raw=true)
 
-https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/role.png
+![alt text](https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/role.png?raw=true)
 
-https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/permission.png
+![alt text](https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/permission.png?raw=true)
 
-https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/role_has_permission.png
+![alt text](https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/role_has_permission.png?raw=true)
 
 
 ### How to install
