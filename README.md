@@ -4,7 +4,7 @@ Website Antrian berbasis web laravel
 
 Screenshot app:
 
-![alt text](https://github.com/RivaldiIdris777/laravel_role_permission_management/blob/main/public/upload/sc_app/login.png?raw=true)
+![alt text](https://github.com/RivaldiIdris777/laravel_web_antrian/blob/main/public/upload/sc_app/antrianappsc.png?raw=true)
 
 
 
