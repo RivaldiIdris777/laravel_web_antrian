@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\Frontend\MainPageController;
+
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\RoleController;
 use App\Http\Controllers\Backend\PermissionController;
@@ -21,6 +24,13 @@ Route::get('/', function () {
     return view('auth.login2');
 });
 
+// Frontend
+Route::get('/antrian', [MainPageController::class, 'index'])->name('antrian.index');
+Route::get('/antrian/antri_cs/{id}/{id1}/{id2}', [MainPageController::class, 'antri_cs']);
+Route::get('/antrian/antri_teller1/{id}/{id1}/{id2}', [MainPageController::class, 'antri_teller1']);
+Route::get('/antrian/antri_teller2/{id}/{id1}/{id2}', [MainPageController::class, 'antri_teller2']);
+
+// Backend
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -57,8 +67,6 @@ Route::middleware('auth')->group(function () {
         Route::post('/update/rolepermission/{id}', 'UpdateRolePermission')->name('rolepermission.update');
         Route::get('/delete/rolepermission/{id}','DeleteRolePermission')->name('rolepermission.delete');
     });
-
-
 
 });
 
